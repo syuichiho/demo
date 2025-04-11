@@ -17,3 +17,5 @@ func (u *Users) Denglu(ctx context.Context, username, password string) error {
 	}
 	return nil
 }
+
+//注册账号的逻辑
