@@ -6,15 +6,10 @@ package users
 
 import (
 	"demo/api/users"
-	userslogic "demo/internal/logic/users"
 )
 
-type ControllerV1 struct {
-	users *userslogic.Users
-}
+type ControllerV1 struct{}
 
 func NewV1() users.IUsersV1 {
-	return &ControllerV1{
-		users: userslogic.New(),
-	}
+	return &ControllerV1{}
 }

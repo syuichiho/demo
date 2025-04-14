@@ -4,7 +4,7 @@
 gfcli:
   gen:
     dao:
-      - link: "mysql:root:151620@tcp(127.0.0.1:3306)/demo"
+      - link: "mysql:root:zhouyifan@tcp(127.0.0.1:3306)/demo"
         descriptionTag: true
 
   docker:

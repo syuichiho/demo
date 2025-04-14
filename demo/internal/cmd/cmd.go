@@ -2,7 +2,6 @@ package cmd
 
 import (
 	"context"
-	"demo/internal/controller/users"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
@@ -18,9 +17,7 @@ var (
 			s := g.Server()
 			s.Group("/", func(group *ghttp.RouterGroup) {
 				group.Middleware(ghttp.MiddlewareHandlerResponse)
-				group.Bind(
-					users.NewV1(),
-				)
+				group.Bind()
 			})
 			s.Run()
 			return nil

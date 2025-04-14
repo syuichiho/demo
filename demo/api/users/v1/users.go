@@ -4,11 +4,11 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 )
 
-type DengluReq struct {
-	g.Meta   `path:"/users" method:"post"`
-	Username string `json:"username"`
-	Password string `json:"password"`
+type ZhuceReq struct {
+	g.Meta   `path:"/zhuce" method:"post"`
+	Username string `json:"username" v:"required#用户名不能为空"`
+	Password string `json:"password" v:"required#密码不能为空"`
 }
 
-type DengluRes struct {
+type ZhuceRes struct {
 }

@@ -11,5 +11,5 @@ import (
 )
 
 type IUsersV1 interface {
-	Denglu(ctx context.Context, req *v1.DengluReq) (res *v1.DengluRes, err error)
+	Zhuce(ctx context.Context, req *v1.ZhuceReq) (res *v1.ZhuceRes, err error)
 }
